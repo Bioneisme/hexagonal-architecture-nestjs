@@ -1,5 +1,5 @@
-import { AccountId } from '../../entities/account.entity';
+import { AccountEntity, AccountId } from '../../entities/account.entity';
 
 export interface LoadAccountPort {
-  loadAccount(accountId: AccountId);
+  loadAccount(accountId: AccountId): Promise<AccountEntity>;
 }
